@@ -4,7 +4,6 @@ import { useTranslation } from '@/lib/i18n';
 import Image from 'next/image';
 import RollingCounter from '@/components/RollingCounter';
 import TeamMemberCard from '@/components/TeamMember';
-import TeamMembersCard from '@/components/TeamMembersCard';
 import { CircleQuestionMark, HandCoins, HeartHandshake, Linkedin, TrendingUp, Users } from 'lucide-react';
 import InfoSimpleCard from '@/components/InfoSimpleCard';
 import Link from 'next/link';
@@ -352,12 +351,12 @@ export default function AboutClient() {
               </AnimatedContent>    
               
               <AnimatedContent distance={40} duration={1.2} delay={0.1}>
-                <TeamMembersCard
-                  imageUrl="/images/planner-2.jpg"
-                  name="Adam Sakhraoui & Thomas Heusdens"
-                  linkedinUrl1="https://www.linkedin.com/in/adam-sakhraoui-672281353/"
-                  linkedinUrl2="https://www.linkedin.com/in/thomas-heusdens-0bba19258/"
-                  email='work@skwd.be'
+                <TeamMemberCard
+                  memberNumber={5}
+                  imageUrl="/images/adam.jpg"
+                  name="Adam Sakhraoui"
+                  linkedinUrl="https://www.linkedin.com/in/adam-sakhraoui-672281353/"
+                  email='adam@skwd.be'
                 />
               </AnimatedContent>
             </div>

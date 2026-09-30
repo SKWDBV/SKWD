@@ -341,16 +341,6 @@ export default function AboutClient() {
                 />
               </AnimatedContent>
               
-              <AnimatedContent distance={40} duration={1.2} delay={0.2}>
-                <TeamMemberCard
-                  memberNumber={3}
-                  imageUrl="/images/antoine.jpeg"
-                  name="Antoine Collin"
-                  linkedinUrl="https://www.linkedin.com/in/antoine-collin-3937292a5/"
-                  email='antoine@skwd.be'
-                />
-              </AnimatedContent>
-              
               <AnimatedContent distance={40} duration={1.2}>
                 <TeamMemberCard
                   memberNumber={4}

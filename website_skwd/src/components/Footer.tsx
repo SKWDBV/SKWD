@@ -221,15 +221,7 @@ export default function Footer() {
             </a>
           </div>
           <div className='text-white'>
-            {t.made_by}{' '}
-            <Link
-              href="https://www.linkedin.com/in/thomas-heusdens-0bba19258/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-white transition-colors"
-            >
-              Thomas Heusdens
-            </Link>
+            {t.made_by} SKWD
           </div>
         </div>
       </div>

@@ -196,10 +196,10 @@ export default function FaqClient() {
           '@type': 'Answer',
           text:
             locale === 'fr'
-              ? 'Nos bureaux sont situés à Bruxelles, Anvers et à Malines, mais nos missions couvrent toute la Belgique et parfois même les pays voisins.'
+              ? 'Nos bureaux sont situés à Bruxelles, Anvers et Liège, mais nos missions couvrent toute la Belgique et parfois même les pays voisins.'
               : locale === 'nl'
-              ? 'Onze kantoren bevinden zich in Brussel, Antwerpen en in Mechelen, maar onze opdrachten vinden plaats in heel België en soms zelfs in de buurlanden.'
-              : 'Our offices are based in Brussels, Antwerp, and in Mechelen but our events take place all across Belgium and sometimes even in neighboring countries.',
+              ? 'Onze kantoren bevinden zich in Brussel, Antwerpen en Luik, maar onze opdrachten vinden plaats in heel België en soms zelfs in de buurlanden.'
+              : 'Our offices are based in Brussels, Antwerp and Liège, but our events take place all across Belgium and sometimes even in neighboring countries.',
         },
       },
       {

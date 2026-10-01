@@ -339,7 +339,7 @@ export default function AboutClient() {
                   email='benjamin@skwd.be'
                 />
               </AnimatedContent>
-              
+
               <AnimatedContent distance={40} duration={1.2} delay={0.2}>
                 <TeamMemberCard
                   memberNumber={6}
@@ -349,17 +349,7 @@ export default function AboutClient() {
                   email='lydie@houseofhospitality.be'
                 />
               </AnimatedContent>
-              
-              <AnimatedContent distance={40} duration={1.2}>
-                <TeamMemberCard
-                  memberNumber={4}
-                  imageUrl="/images/cintia.jpeg"
-                  name="Cintia Saliba"
-                  linkedinUrl="https://www.linkedin.com/in/cintia-saliba/"
-                  email='cintia@skwd.be'
-                />
-              </AnimatedContent>    
-              
+
               <AnimatedContent distance={40} duration={1.2} delay={0.1}>
                 <TeamMemberCard
                   memberNumber={5}
@@ -367,6 +357,16 @@ export default function AboutClient() {
                   name="Adam Sakhraoui"
                   linkedinUrl="https://www.linkedin.com/in/adam-sakhraoui-672281353/"
                   email='adam@skwd.be'
+                />
+              </AnimatedContent>
+
+              <AnimatedContent distance={40} duration={1.2} delay={0.2}>
+                <TeamMemberCard
+                  memberNumber={4}
+                  imageUrl="/images/cintia.jpeg"
+                  name="Cintia Saliba"
+                  linkedinUrl="https://www.linkedin.com/in/cintia-saliba/"
+                  email='cintia@skwd.be'
                 />
               </AnimatedContent>
             </div>

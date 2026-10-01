@@ -340,6 +340,16 @@ export default function AboutClient() {
                 />
               </AnimatedContent>
               
+              <AnimatedContent distance={40} duration={1.2} delay={0.2}>
+                <TeamMemberCard
+                  memberNumber={6}
+                  imageUrl="/images/lydie.jpg"
+                  name="Lydie De Harenne"
+                  linkedinUrl="https://www.linkedin.com/in/lydiebride/"
+                  email='lydie@houseofhospitality.be'
+                />
+              </AnimatedContent>
+              
               <AnimatedContent distance={40} duration={1.2}>
                 <TeamMemberCard
                   memberNumber={4}

@@ -313,7 +313,7 @@ export default function ContactClient() {
                           <h3 className="text-sm font-semibold text-white mb-1">{t('contact_address')}</h3>
                           <a href='https://www.google.com/maps/place/SKWD/@50.8642498,4.3414631,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3c3e813e7b6a5:0xa201303064b9d786!8m2!3d50.8642464!4d4.344038!16s%2Fg%2F11x2x9sxz2?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D' target='_blank' className="text-sm text-white/70">{t('contact_address_name_brussels')}</a>
                           <a href="https://maps.app.goo.gl/riaq21uyMWZ5jiPB6" target='_blank' className="text-sm text-white/70">{t('contact_address_name_antwerp')}</a>
-                          <a href="https://maps.app.goo.gl/Grvri2EQBqpdsuPs9" target='_blank' className="text-sm text-white/70">{t('contact_address_name_mechelen')}</a>
+                          <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47c0f99f80fba17f:0xf21a80b59459d334" target='_blank' className="text-sm text-white/70">{t('contact_address_name_liege')}</a>
                         </div>
                       </div>
                     </div>

@@ -51,7 +51,7 @@ export default function Footer() {
       quick_links: 'Quick links',
       about_us: 'Over ons',
       horeca_sector: 'Hospitality sector',
-      logistics_sector: 'Logistiek sector',
+      logistics_sector: 'Logistieke sector',
       for_students: 'Voor studenten',
       apply: 'Solliciteren',
       faq: 'FAQ',

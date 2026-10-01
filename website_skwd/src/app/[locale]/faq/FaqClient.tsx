@@ -160,10 +160,10 @@ export default function FaqClient() {
           '@type': 'Answer',
           text:
             locale === 'fr'
-              ? "SKWD est une agence d’intérim dynamique spécialisée dans la mise en relation d’étudiants motivés avec des emplois dans les secteurs de l’hospitalité et de la logistique."
+              ? "SKWD est une agence d’intérim agréée qui met en relation des étudiants et flexi-jobs avec tous types d’emplois, avec un accent particulier sur l’hospitalité."
               : locale === 'nl'
-              ? 'SKWD is een dynamisch uitzendbureau dat studenten koppelt aan uiteenlopende jobs binnen de hospitality- en logistieke sector.'
-              : 'SKWD is a dynamic staffing agency focused on connecting motivated students with job opportunities in the hospitality and logistics sectors.',
+              ? 'SKWD is een erkend uitzendbureau dat studenten en flexi-jobbers koppelt aan alle soorten jobs, met een sterke focus op hospitality.'
+              : 'SKWD is a certified staffing agency connecting students and flexi-job workers with all kinds of jobs, with a strong focus on hospitality.',
         },
       },
       {
@@ -172,7 +172,7 @@ export default function FaqClient() {
           locale === 'fr'
             ? 'Quels types d’événements proposez-vous ?'
             : locale === 'nl'
-            ? 'Welke soorten evenementen?'
+            ? 'Op welke soorten evenementen werken jullie?'
             : 'What types of events do you work with?',
         acceptedAnswer: {
           '@type': 'Answer',

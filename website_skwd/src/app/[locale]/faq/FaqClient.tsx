@@ -250,10 +250,10 @@ export default function FaqClient() {
           '@type': 'Answer',
           text:
             locale === 'fr'
-              ? 'Après votre candidature, vous serez invité(e) à une séance d’information. Pour le secteur de l’horeca, une courte formation est ensuite organisée dans nos bureaux, tandis qu’aucune formation n’est requise pour le secteur logistique. Nos séances d’information suivent un cycle fixe : Semaine 1 – Lundi (Infosession Bruxelles), Mardi (Formation Bruxelles), Mercredi (Infosession + Formation Anvers). Semaine 2 – Lundi (Infosession Bruxelles), Mardi (Infosession Malines), Mercredi (Infosession Anvers). Le cycle se répète ensuite en continu.'
+              ? 'Après votre candidature, vous serez invité(e) à une séance d’information. Pour le secteur de l’horeca, une courte formation est ensuite organisée dans nos bureaux, tandis qu’aucune formation n’est requise pour le secteur logistique.'
               : locale === 'nl'
-              ? 'Na je sollicitatie word je uitgenodigd voor een infosessie. Voor de horecasector volgt daarna een korte opleiding op kantoor, terwijl dit voor de logistieke sector niet nodig is. Onze infosessies volgen een vast schema: Week 1 – Maandag (Infosessie Brussel), Dinsdag (Opleiding Brussel), Woensdag (Infosessie + Opleiding Antwerpen). Week 2 – Maandag (Infosessie Brussel), Dinsdag (Infosessie Mechelen), Woensdag (Infosessie Antwerpen). Daarna herhaalt het schema zich voortdurend.'
-              : 'After applying, you’ll be invited to an information session. For the hospitality sector, a short in-office training follows, while no training is required for the logistics sector. Our information sessions follow a recurring schedule: Week 1 – Monday (Brussels Info Session), Tuesday (Brussels Training), Wednesday (Antwerp Info + Training). Week 2 – Monday (Brussels Info Session), Tuesday (Mechelen Info Session), Wednesday (Antwerp Info Session). This schedule then repeats continuously.',
+              ? 'Na je sollicitatie word je uitgenodigd voor een infosessie. Voor de horecasector volgt daarna een korte opleiding op kantoor, terwijl dit voor de logistieke sector niet nodig is.'
+              : 'After applying, you’ll be invited to an information session. For the hospitality sector, a short in-office training follows, while no training is required for the logistics sector.',
         },
       },
       {

@@ -6,9 +6,21 @@ import { useTranslation } from '@/lib/i18n';
 import { usePathname } from 'next/navigation';
 import AnimatedContent from '@/components/AnimatedContent';
 import Image from 'next/image';
+import OfficeMap, { type Office } from '@/components/OfficeMap';
 
 export default function ContactClient() {
   const { t } = useTranslation();
+
+  // Offices shown in the address list and on the map (x/y = position on the map of Belgium).
+  const officeFrom = (key: string, href: string, x: number, y: number): Office => {
+    const [name, ...rest] = t(key).split(':');
+    return { name: name.trim(), address: rest.join(':').trim(), href, x, y };
+  };
+  const offices: Office[] = [
+    officeFrom('contact_address_name_brussels', 'https://www.google.com/maps/place/SKWD/@50.8642498,4.3414631,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3c3e813e7b6a5:0xa201303064b9d786!8m2!3d50.8642464!4d4.344038!16s%2Fg%2F11x2x9sxz2?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D', 295, 174),
+    officeFrom('contact_address_name_antwerp', 'https://maps.app.goo.gl/riaq21uyMWZ5jiPB6', 305, 98),
+    officeFrom('contact_address_name_liege', 'https://www.google.com/maps/place//data=!4m2!3m1!1s0x47c0f99f80fba17f:0xf21a80b59459d334', 473, 229),
+  ];
   const pathname = usePathname();
   const localeFromPath = pathname.split('/')[1];
   const locale: 'en' | 'fr' | 'nl' =
@@ -311,9 +323,11 @@ export default function ContactClient() {
                         </div>
                         <div className='flex flex-col'>
                           <h3 className="text-sm font-semibold text-white mb-1">{t('contact_address')}</h3>
-                          <a href='https://www.google.com/maps/place/SKWD/@50.8642498,4.3414631,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3c3e813e7b6a5:0xa201303064b9d786!8m2!3d50.8642464!4d4.344038!16s%2Fg%2F11x2x9sxz2?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D' target='_blank' className="text-sm text-white/70">{t('contact_address_name_brussels')}</a>
-                          <a href="https://maps.app.goo.gl/riaq21uyMWZ5jiPB6" target='_blank' className="text-sm text-white/70">{t('contact_address_name_antwerp')}</a>
-                          <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47c0f99f80fba17f:0xf21a80b59459d334" target='_blank' className="text-sm text-white/70">{t('contact_address_name_liege')}</a>
+                          {offices.map((office) => (
+                            <a key={office.name} href={office.href} target='_blank' rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">
+                              {office.name}: {office.address}
+                            </a>
+                          ))}
                         </div>
                       </div>
                     </div>
@@ -321,19 +335,8 @@ export default function ContactClient() {
                 </AnimatedContent>
                 
 
-                {/* Google Maps Embed */}
-                <div className="hidden lg:block rounded-2xl overflow-hidden border border-white/10 shadow-2xl mt-2">
-                  <iframe
-                    title="SKWD Brussels location"
-                    width="100%"
-                    height="280"
-                    style={{ border: 0 }}
-                    loading="lazy"
-                    allowFullScreen
-                    referrerPolicy="no-referrer-when-downgrade"
-                    src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=place_id:ChIJpbbnE-jDw0cRhte5ZDAwAaI`}
-                  />
-                </div>
+                {/* Map of Belgium with our offices */}
+                <OfficeMap offices={offices} label={t('contact_map_label')} className="hidden lg:block mt-2" />
               </div>
 
               {/* RIGHT: Form */}
@@ -475,19 +478,8 @@ export default function ContactClient() {
                     </form>
                   </div>
 
-                  {/* Mobile Map - Visible only on mobile */}
-                  <div className="lg:hidden mt-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-                    <iframe
-                      title="SKWD Brussels location"
-                      width="100%"
-                      height="300"
-                      style={{ border: 0 }}
-                      loading="lazy"
-                      allowFullScreen
-                      referrerPolicy="no-referrer-when-downgrade"
-                      src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=place_id:ChIJpbbnE-jDw0cRhte5ZDAwAaI`}
-                    ></iframe>
-                  </div>
+                  {/* Mobile map - visible only on mobile */}
+                  <OfficeMap offices={offices} label={t('contact_map_label')} className="lg:hidden mt-8" />
                 </div>
               </AnimatedContent>
             </div>

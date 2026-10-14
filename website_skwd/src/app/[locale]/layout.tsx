@@ -31,9 +31,9 @@ export async function generateMetadata({
       seoTitle: 'Bienvenue chez SKWD – votre agence intérim',
       ogTitle: 'Bienvenue chez SKWD – votre agence intérim pour étudiants et flexi-jobs',
       description:
-        "SKWD est votre agence intérim fiable en Belgique pour les étudiants et les flexi-jobs. Jeune, dynamique et flexible.",
+        "Tu cherches un job étudiant à Bruxelles, Anvers ou Malines ? Chez SKWD, tu trouves des jobs étudiants flexibles dans l'horeca, l'événementiel et la logistique. Tu cherches du personnel pour ton entreprise ? SKWD t'aide avec des étudiants et des flexis motivés pour ton événement, ton établissement horeca ou ta mission.",
       ogDescription:
-        "SKWD est votre partenaire fiable en Belgique pour les étudiants et les flexi-jobs. Jeune, dynamique et flexible.",
+        "Tu cherches un job étudiant à Bruxelles, Anvers ou Malines ? Chez SKWD, tu trouves des jobs étudiants flexibles dans l'horeca, l'événementiel et la logistique. Tu cherches du personnel pour ton entreprise ? SKWD t'aide avec des étudiants et des flexis motivés pour ton événement, ton établissement horeca ou ta mission.",
       url: `${siteUrl}/fr`,
     },
     nl: {
@@ -41,9 +41,9 @@ export async function generateMetadata({
       seoTitle: 'Welkom bij SKWD – jouw uitzendkantoor',
       ogTitle: 'Welkom bij SKWD – jouw uitzendkantoor voor studenten en flexis',
       description:
-        'SKWD is jouw betrouwbare uitzendkantoor in België voor studenten en flexi’s. Jong, dynamisch en flexibel.',
+        "Op zoek naar een studentenjob in Brussel, Antwerpen of Mechelen? Bij SKWD vind je flexibele studentenjobs in horeca, events en logistiek. Zoek je als bedrijf personeel? SKWD helpt je met gemotiveerde studenten en flexi's voor jouw event, horecazaak of opdracht.",
       ogDescription:
-        'SKWD is jouw betrouwbare partner in België voor studenten en flexi’s. Jong, dynamisch en flexibel.',
+        "Op zoek naar een studentenjob in Brussel, Antwerpen of Mechelen? Bij SKWD vind je flexibele studentenjobs in horeca, events en logistiek. Zoek je als bedrijf personeel? SKWD helpt je met gemotiveerde studenten en flexi's voor jouw event, horecazaak of opdracht.",
       url: `${siteUrl}/nl`,
     },
     en: {
@@ -51,9 +51,9 @@ export async function generateMetadata({
       seoTitle: 'Welcome to SKWD – your temp agency',
       ogTitle: 'Welcome to SKWD – your temp agency for students and flexi workers',
       description:
-        'SKWD is your reliable temp agency in Belgium for students and flexi workers. Young, dynamic, and flexible.',
+        "Looking for a student job in Brussels, Antwerp or Mechelen? At SKWD you'll find flexible student jobs in hospitality, events and logistics. Looking for staff for your business? SKWD helps you with motivated students and flexi workers for your event, hospitality venue or assignment.",
       ogDescription:
-        'SKWD is your reliable partner in Belgium for students and flexi workers. Young, dynamic, and flexible.',
+        "Looking for a student job in Brussels, Antwerp or Mechelen? At SKWD you'll find flexible student jobs in hospitality, events and logistics. Looking for staff for your business? SKWD helps you with motivated students and flexi workers for your event, hospitality venue or assignment.",
       url: `${siteUrl}/en`,
     },
   };

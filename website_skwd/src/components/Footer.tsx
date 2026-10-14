@@ -26,7 +26,11 @@ export default function Footer() {
       privacy_policy: 'Privacy Policy & General Terms',
       made_by: 'Made by',
       work: "Work with us",
-      address: "Rue Picard 7/204, 1000 Brussels",
+      offices: [
+        "Brussels: Rue Picard 7/204, 1000 Brussels",
+        "Antwerp: Kon. Elisabethlei 10, 2018 Antwerpen",
+        "Liège: Esplanade Simone Veil 1, 4000 Liège",
+      ],
     },
     fr: {
       recognition_label: 'Reconnaissance agence intérimaire:',
@@ -43,7 +47,11 @@ export default function Footer() {
       privacy_policy: 'Politique de Confidentialité & Conditions Générales',
       made_by: 'Créé par',
       work: "Collaborer avec nous",
-      address: "Rue Picard 7/204, 1000 Bruxelles",
+      offices: [
+        "Bruxelles: Rue Picard 7/204, 1000 Bruxelles",
+        "Anvers: Kon. Elisabethlei 10, 2018 Anvers",
+        "Liège: Esplanade Simone Veil 1, 4000 Liège",
+      ],
     },
     nl: {
       recognition_label: 'Erkenning uitzendbureau:',
@@ -60,9 +68,19 @@ export default function Footer() {
       privacy_policy: 'Privacy Policy & Algemene voorwaarden',
       made_by: 'Gemaakt door',
       work: "Werk met ons",
-      address: "Picardstraat 7/204, 1000 Brussels",
+      offices: [
+        "Brussel: Picardstraat 7/204, 1000 Brussel",
+        "Antwerpen: Kon. Elisabethlei 10, 2018 Antwerpen",
+        "Luik: Esplanade Simone Veil 1, 4000 Luik",
+      ],
     },
   };
+
+  const officeMapLinks = [
+    'https://www.google.com/maps/place/SKWD/@50.8642498,4.3414631,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3c3e813e7b6a5:0xa201303064b9d786!8m2!3d50.8642464!4d4.344038!16s%2Fg%2F11x2x9sxz2?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D',
+    'https://maps.app.goo.gl/riaq21uyMWZ5jiPB6',
+    'https://www.google.com/maps/place//data=!4m2!3m1!1s0x47c0f99f80fba17f:0xf21a80b59459d334',
+  ];
 
   const pathname = usePathname();
   const localeFromPath = pathname.split('/')[1] as Locale;
@@ -187,10 +205,12 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">{t.contact}</h3>
             <ul className="space-y-3 text-white/80 text-sm">
-              <li className="flex items-center gap-2">
-                <MapPin className="text-skwd-button mt-1 w-5 h-5"/>
-                <a href='https://www.google.com/maps/place/SKWD/@50.8642498,4.3414631,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3c3e813e7b6a5:0xa201303064b9d786!8m2!3d50.8642464!4d4.344038!16s%2Fg%2F11x2x9sxz2?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D' target='_blank' className="hover:text-white transition-colors font-light">{t.address}</a>
-              </li>
+              {t.offices.map((office, i) => (
+                <li key={office} className="flex items-start gap-2">
+                  <MapPin className="text-skwd-button w-5 h-5 shrink-0"/>
+                  <a href={officeMapLinks[i]} target='_blank' rel="noopener noreferrer" className="hover:text-white transition-colors font-light">{office}</a>
+                </li>
+              ))}
               <li className="flex items-center gap-2">
                 <Phone className="text-skwd-button mt-1 w-5 h-5"/>
                 <a href="tel:+32456080313" className="hover:text-white transition-colors font-light">

@@ -4,9 +4,6 @@ import Script from "next/script";
 export const metadata = {
   title: 'SKWD',
   description: 'Wij verbinden gemotiveerde studenten met bedrijven voor feilloze events in heel België. Uitzendkantoor voor hospitality en logistiek.',
-  icons: {
-    icon: '/logo-skwd.png'
-  },
   metadataBase: new URL('https://skwd.be'),
 };
 

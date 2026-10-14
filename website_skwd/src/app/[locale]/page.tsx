@@ -136,10 +136,10 @@ export default function HomePage() {
 
     description:
       locale === 'fr'
-        ? "SKWD est votre partenaire fiable en Belgique pour les étudiants et les flexi-jobs. Jeune, dynamique et flexible."
+        ? "Tu cherches un job étudiant à Bruxelles, Anvers ou Malines ? Chez SKWD, tu trouves des jobs étudiants flexibles dans l'horeca, l'événementiel et la logistique. Tu cherches du personnel pour ton entreprise ? SKWD t'aide avec des étudiants et des flexis motivés pour ton événement, ton établissement horeca ou ta mission."
         : locale === 'nl'
-        ? 'SKWD is jouw betrouwbare partner in België voor studenten en flexi’s. Jong, dynamisch en flexibel.'
-        : 'SKWD is your reliable partner in Belgium for students and flexi workers. Young, dynamic, and flexible.',
+        ? "Op zoek naar een studentenjob in Brussel, Antwerpen of Mechelen? Bij SKWD vind je flexibele studentenjobs in horeca, events en logistiek. Zoek je als bedrijf personeel? SKWD helpt je met gemotiveerde studenten en flexi's voor jouw event, horecazaak of opdracht."
+        : "Looking for a student job in Brussels, Antwerp or Mechelen? At SKWD you'll find flexible student jobs in hospitality, events and logistics. Looking for staff for your business? SKWD helps you with motivated students and flexi workers for your event, hospitality venue or assignment.",
 
     isPartOf: { '@id': `${siteUrl}/#website` },
     mainEntity: { '@id': `${siteUrl}/#organization` },

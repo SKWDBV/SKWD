@@ -49,6 +49,22 @@ export default function RootLayout({
           `}
         </Script>
 
+        {/* GOOGLE TAG G-BT5S7BL4QF */}
+        <Script
+          id="gtag-bt5s7bl4qf"
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-BT5S7BL4QF"
+        />
+
+        <Script id="gtag-bt5s7bl4qf-config" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BT5S7BL4QF');
+          `}
+        </Script>
+
         {/* META PIXEL CODE */}
         <Script id="meta-pixel" strategy="afterInteractive">
           {`

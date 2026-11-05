@@ -3,7 +3,7 @@ import Script from "next/script";
 
 export const metadata = {
   title: 'SKWD',
-  description: 'Wij verbinden gemotiveerde studenten met bedrijven voor feilloze events in heel België. Uitzendkantoor voor hospitality en logistiek.',
+  description: 'Student jobs and staff for hospitality, events and logistics in Brussels, Antwerp and Liège. SKWD connects motivated students and flexi workers with businesses.',
   metadataBase: new URL('https://skwd.be'),
 };
 
